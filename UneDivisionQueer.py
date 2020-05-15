@@ -16,6 +16,7 @@ def program():
             reformed_dividend = dividend - remainder
             reformed_quotient = reformed_dividend/divisor
             reformed_quotient = int(reformed_quotient)
+            remainder = round(remainder,3)
             print("The quotient is",reformed_quotient,",with a remainder of",remainder,".")
             print("The exact division with decimals is",pure_quotient,".")
 
@@ -33,6 +34,15 @@ def program():
             break
         except ValueError:
             print("Error 19c - You have entered a unrecognizable value. Please enter only float input.")
+    while num2 == 0:
+        while True:
+            try:
+                print("Error 19e - You have entered a zero for the divisor. Please enter the divisor again.")
+                num2 = (input("Enter second number:"))
+                num2 = float(num2)
+                break
+            except ValueError:
+                print("Error 19c - You have entered a unrecognizable value. Please enter only a float value.")
     queer_division(num1,num2)
 
 
