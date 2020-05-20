@@ -16,7 +16,7 @@ def program():
             reformed_dividend = dividend - remainder
             reformed_quotient = reformed_dividend/divisor
             reformed_quotient = int(reformed_quotient)
-            remainder = round(remainder,3)
+            remainder = round(remainder,5)
             print("The quotient is",reformed_quotient,",with a remainder of",remainder,".")
             print("The exact division with decimals is",pure_quotient,".")
 
